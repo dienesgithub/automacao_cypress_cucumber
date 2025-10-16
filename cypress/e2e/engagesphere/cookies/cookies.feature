@@ -1,5 +1,6 @@
 Feature: Cookies Consent Banner
 
+    @engagesphere
     Scenario: consent the cookies' policies
         Given I access the EngageSphere app without any cookies set
         And I see the cookies consent Banner
@@ -7,6 +8,7 @@ Feature: Cookies Consent Banner
         Then the cookies banner is closed
         And the cookiesConsent cookies is set with the value accepted
 
+    @engagesphere
     Scenario: declines the cookies' policies
         Given I access the EngageSphere app without any cookies set
         And I see the cookies consent Banner

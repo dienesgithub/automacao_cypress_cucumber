@@ -4,7 +4,7 @@ Given('I access the Hacker Stories', () => {
   cy.visit('https://wlsf82-hacker-stories.web.app/')
 })
 
-Then('I search for these terms', (table) => {
+When('I search for these terms', (table) => {
   table.raw()[0].forEach(term => {
     cy.get('#search')
       .clear()
